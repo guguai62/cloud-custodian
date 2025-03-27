@@ -175,16 +175,15 @@ class ResourceQuery:
             str(response).replace('null', 'None').replace('false', 'False')
             .replace('true', 'True')))
 
-        resources = []
         # replace id with the specified one
         if res is None or len(res) == 0:
-            return resources
+            return []
         # re-set id
         if 'id' not in res[0]:
             for data in res:
                 data['id'] = data[m.id]
 
-        return resources
+        return res
 
     def _pagination_limit_page(self, m, enum_op, path):
         session = local_session(self.session_factory)
