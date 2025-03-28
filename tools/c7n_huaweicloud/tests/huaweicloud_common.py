@@ -10,9 +10,12 @@ from c7n_huaweicloud.client import Session
 
 
 HUAWEICLOUD_CONFIG = {
+    # 'HUAWEI_DEFAULT_REGION': 'ap-southeast-1',
+    # 'HUAWEI_ACCESS_KEY_ID': 'access_key_id',
+    # 'HUAWEI_SECRET_ACCESS_KEY': 'secret_access_key',
     'HUAWEI_DEFAULT_REGION': 'ap-southeast-1',
-    'HUAWEI_ACCESS_KEY_ID': 'access_key_id',
-    'HUAWEI_SECRET_ACCESS_KEY': 'secret_access_key',
+    'HUAWEI_ACCESS_KEY_ID': 'FN4AVCDTMYOSBFNCB4OA',
+    'HUAWEI_SECRET_ACCESS_KEY': 'jY2NFQYKLVOhdE97e0gRN3GrmLSsZDQY4tGOATfi',
     'HUAWEI_PROJECT_ID': 'ap-southeat-1',
 }
 

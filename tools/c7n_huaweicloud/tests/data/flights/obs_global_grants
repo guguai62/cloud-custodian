@@ -1,0 +1,318 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 06:44:15 GMT
+      Host:
+      - obs.ap-southeast-1.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: HEAD
+    uri: https://obs.ap-southeast-1.myhuaweicloud.com/?apiversion
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 06:44:15 GMT
+      Server:
+      - OBS
+      x-amz-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaE=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-amz-request-id:
+      - 00000195DB7E7FD94006446974BEBF75
+      x-obs-api:
+      - '3.0'
+      x-reserved:
+      - amazon, aws and amazon web services are trademarks or registered trademarks
+        of Amazon Technologies, Inc
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 06:44:15 GMT
+      Host:
+      - obs.ap-southeast-1.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+      x-obs-location:
+      - 'true'
+    method: GET
+    uri: https://obs.ap-southeast-1.myhuaweicloud.com/
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><ListAllMyBucketsResult
+        xmlns="http://obs.myhwclouds.com/doc/2015-06-30/"><Owner><ID>9dca8b8801274a3a9c4184b957dffc83</ID></Owner><Buckets><Bucket><Name>test-buckwt-3az1</Name><CreationDate>2023-02-02T07:39:10.903Z</CreationDate><Location>cn-north-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>test-buckwt-3az6</Name><CreationDate>2023-05-26T12:44:05.288Z</CreationDate><Location>cn-east-3</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>test-buckwt-3az7</Name><CreationDate>2023-07-20T10:02:44.464Z</CreationDate><Location>cn-southwest-2</Location><BucketType>OBJECT</BucketType></Bucket></Buckets></ListAllMyBucketsResult>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '3394'
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 28 Mar 2025 06:44:15 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaM=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DB7E7FE7400A4A4F5018A0AC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 06:44:15 GMT
+      Host:
+      - test-buckwt-3az1.obs.cn-north-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: HEAD
+    uri: https://test-buckwt-3az1.obs.cn-north-4.myhuaweicloud.com/?apiversion
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 06:44:16 GMT
+      Server:
+      - OBS
+      x-obs-api:
+      - '3.0'
+      x-obs-id-2:
+      - 32AAAQAAEAABAAAQAAEAABAAAQAAEAABCSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DB7E83FCF04635667B53088D
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 06:44:16 GMT
+      Host:
+      - test-buckwt-3az6.obs.cn-east-3.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: GET
+    uri: https://test-buckwt-3az6.obs.cn-east-3.myhuaweicloud.com/?acl
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><AccessControlPolicy
+        xmlns="http://obs.myhwclouds.com/doc/2015-06-30/"><Owner><ID>9dca8b8801274a3a9c4184b957dffc83</ID></Owner><AccessControlList><Grant><Grantee><ID>9dca8b8801274a3a9c4184b957dffc83</ID></Grantee><Permission>FULL_CONTROL</Permission><Delivered>false</Delivered></Grant><Grant><Grantee><Canned>Everyone</Canned></Grantee><Permission>READ</Permission><Delivered>false</Delivered></Grant><Grant><Grantee><Canned>Everyone</Canned></Grantee><Permission>WRITE</Permission><Delivered>false</Delivered></Grant></AccessControlList></AccessControlPolicy>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '616'
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 28 Mar 2025 06:44:17 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DB7E879EC16B1C8FDA5A0F78
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 06:44:17 GMT
+      Host:
+      - test-buckwt-3az6.obs.cn-east-3.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: GET
+    uri: https://test-buckwt-3az6.obs.cn-east-3.myhuaweicloud.com/?website
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Error><Code>NoSuchWebsiteConfiguration</Code><Message>The
+        specified bucket does not have a website configuration.</Message><RequestId>00000195DB7E8B95CA480F07CD382220</RequestId><HostId>X/n8tVGOGA4PA8gA7wq5dMyj3w5yrdo+cxTCACy3L0dhg6AvoqNoB1ntLmanZwD4</HostId><BucketName>test-buckwt-3az6</BucketName></Error>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '364'
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 28 Mar 2025 06:44:18 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DB7E8B95CA480F07CD382220
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 06:45:48 GMT
+      Host:
+      - test-buckwt-3az1.obs.cn-north-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: GET
+    uri: https://test-buckwt-3az1.obs.cn-north-4.myhuaweicloud.com/?acl
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><AccessControlPolicy
+        xmlns="http://obs.myhwclouds.com/doc/2015-06-30/"><Owner><ID>9dca8b8801274a3a9c4184b957dffc83</ID></Owner><AccessControlList><Grant><Grantee><ID>9dca8b8801274a3a9c4184b957dffc83</ID></Grantee><Permission>FULL_CONTROL</Permission><Delivered>false</Delivered></Grant><Grant><Grantee><Canned>Everyone</Canned></Grantee><Permission>READ</Permission><Delivered>false</Delivered></Grant></AccessControlList></AccessControlPolicy>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '499'
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 28 Mar 2025 06:45:48 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 32AAAQAAEAABAAAQAAEAABAAAQAAEAABCSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DB7FEC08B0889ED4F432B65C
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 06:45:49 GMT
+      Host:
+      - test-buckwt-3az7.obs.cn-southwest-2.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: GET
+    uri: https://test-buckwt-3az7.obs.cn-southwest-2.myhuaweicloud.com/?acl
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><AccessControlPolicy
+        xmlns="http://obs.myhwclouds.com/doc/2015-06-30/"><Owner><ID>9dca8b8801274a3a9c4184b957dffc83</ID></Owner><AccessControlList><Grant><Grantee><ID>9dca8b8801274a3a9c4184b957dffc83</ID></Grantee><Permission>FULL_CONTROL</Permission><Delivered>false</Delivered></Grant></AccessControlList></AccessControlPolicy>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '383'
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 28 Mar 2025 06:45:49 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 32AAAQAAEAABAAAQAAEAABAAAQAAEAABCSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DB7FF07B00699B87B0939006
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 07:01:52 GMT
+      Host:
+      - test-buckwt-3az7.obs.cn-southwest-2.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: HEAD
+    uri: https://test-buckwt-3az7.obs.cn-southwest-2.myhuaweicloud.com/?apiversion
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 07:01:53 GMT
+      Server:
+      - OBS
+      x-obs-api:
+      - '3.0'
+      x-obs-id-2:
+      - 32AAAQAAEAABAAAQAAEAABAAAQAAEAABCSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DB8EA61F0147AF41C19F8A69
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 07:06:46 GMT
+      Host:
+      - test-buckwt-3az6.obs.cn-east-3.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: HEAD
+    uri: https://test-buckwt-3az6.obs.cn-east-3.myhuaweicloud.com/?apiversion
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 07:06:47 GMT
+      Server:
+      - OBS
+      x-obs-api:
+      - '3.0'
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DB9320BCC0EB49A5D3A24EF5
+    status:
+      code: 200
+      message: OK
+version: 1

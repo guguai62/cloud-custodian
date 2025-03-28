@@ -1,0 +1,320 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Host:
+      - obs.ap-southeast-1.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: HEAD
+    uri: https://obs.ap-southeast-1.myhuaweicloud.com/?apiversion
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Server:
+      - OBS
+      x-amz-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaE=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-amz-request-id:
+      - 00000195DBF22BEC40083261FD871DF8
+      x-obs-api:
+      - '3.0'
+      x-reserved:
+      - amazon, aws and amazon web services are trademarks or registered trademarks
+        of Amazon Technologies, Inc
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Host:
+      - obs.ap-southeast-1.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+      x-obs-location:
+      - 'true'
+    method: GET
+    uri: https://obs.ap-southeast-1.myhuaweicloud.com/
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><ListAllMyBucketsResult
+        xmlns="http://obs.myhwclouds.com/doc/2015-06-30/"><Owner><ID>9dca8b8801274a3a9c4184b957dffc83</ID></Owner><Buckets><Bucket><Name>bpa-abc-123</Name><CreationDate>2025-03-28T07:45:11.255Z</CreationDate><Location>ap-southeast-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>bpa-abc-efg</Name><CreationDate>2025-03-21T10:58:47.598Z</CreationDate><Location>ap-southeast-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>guangzhou-abc</Name><CreationDate>2025-03-21T08:49:19.270Z</CreationDate><Location>cn-south-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>jgjhgjhgjghjjgjghgj</Name><CreationDate>2023-02-02T07:39:10.903Z</CreationDate><Location>cn-north-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>mangu003</Name><CreationDate>2023-05-26T12:44:05.288Z</CreationDate><Location>cn-north-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>sdgdfkjlk</Name><CreationDate>2023-07-20T10:02:44.464Z</CreationDate><Location>cn-north-9</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>test-bucker-ycp</Name><CreationDate>2022-12-30T02:25:36.443Z</CreationDate><Location>cn-north-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>test-bucket-wl</Name><CreationDate>2023-02-09T06:07:54.614Z</CreationDate><Location>cn-north-9</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>test-buckwt-3az1</Name><CreationDate>2024-09-04T09:47:06.311Z</CreationDate><Location>cn-north-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>test-buckwt-3az6</Name><CreationDate>2025-03-27T13:26:08.978Z</CreationDate><Location>cn-east-3</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>test-buckwt-3az7</Name><CreationDate>2025-03-27T13:27:50.427Z</CreationDate><Location>cn-southwest-2</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>xinjiapo001</Name><CreationDate>2023-05-26T12:44:35.664Z</CreationDate><Location>ap-southeast-3</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>xinjiapo002</Name><CreationDate>2023-05-26T12:44:58.930Z</CreationDate><Location>cn-north-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>xinjiapo003</Name><CreationDate>2023-05-26T12:45:18.878Z</CreationDate><Location>cn-north-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>xjp001</Name><CreationDate>2023-05-26T13:45:30.266Z</CreationDate><Location>ap-southeast-3</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>xjp002</Name><CreationDate>2023-05-26T13:45:49.198Z</CreationDate><Location>ap-southeast-3</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>xjp003</Name><CreationDate>2023-05-26T13:46:09.533Z</CreationDate><Location>ap-southeast-3</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>xjpaz001</Name><CreationDate>2023-05-26T14:34:21.688Z</CreationDate><Location>ap-southeast-3</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>ycp-website-bucket</Name><CreationDate>2023-02-02T07:38:14.052Z</CreationDate><Location>cn-north-4</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>zjpaz002</Name><CreationDate>2023-05-26T14:34:40.310Z</CreationDate><Location>ap-southeast-3</Location><BucketType>OBJECT</BucketType></Bucket><Bucket><Name>zjpaz003</Name><CreationDate>2023-05-26T14:34:59.635Z</CreationDate><Location>ap-southeast-3</Location><BucketType>OBJECT</BucketType></Bucket></Buckets></ListAllMyBucketsResult>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '3554'
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DBF22BFD4008367BFD9A6A6A
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Host:
+      - bpa-abc-123.obs.ap-southeast-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: HEAD
+    uri: https://bpa-abc-123.obs.ap-southeast-4.myhuaweicloud.com/?apiversion
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Server:
+      - OBS
+      x-obs-api:
+      - '3.0'
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DBF22D2B002561E24D1944E6
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Host:
+      - bpa-abc-123.obs.ap-southeast-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: GET
+    uri: https://bpa-abc-123.obs.ap-southeast-4.myhuaweicloud.com/?publicAccessBlock
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><PublicAccessBlockConfiguration
+        xmlns="http://obs.myhwclouds.com/doc/2015-06-30/"><BlockPublicAcls>false</BlockPublicAcls><IgnorePublicAcls>true</IgnorePublicAcls><BlockPublicPolicy>true</BlockPublicPolicy><RestrictPublicBuckets>true</RestrictPublicBuckets></PublicAccessBlockConfiguration>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '345'
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DBF22E200005E08A726AFAA3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 08:50:36 GMT
+      Host:
+      - bpa-abc-123.obs.ap-southeast-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: HEAD
+    uri: https://bpa-abc-123.obs.ap-southeast-4.myhuaweicloud.com/?apiversion
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 08:50:37 GMT
+      Server:
+      - OBS
+      x-obs-api:
+      - '3.0'
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DBF22F9C000617A0C9980CDC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <PublicAccessBlockConfiguration><BlockPublicAcls>True</BlockPublicAcls><IgnorePublicAcls>True</IgnorePublicAcls><BlockPublicPolicy>True</BlockPublicPolicy><RestrictPublicBuckets>True</RestrictPublicBuckets></PublicAccessBlockConfiguration>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '239'
+      Content-MD5:
+      - amkfKIYuyjPjjkpzzmHh0A==
+      Date:
+      - Fri, 28 Mar 2025 08:50:37 GMT
+      Host:
+      - bpa-abc-123.obs.ap-southeast-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: PUT
+    uri: https://bpa-abc-123.obs.ap-southeast-4.myhuaweicloud.com/?publicAccessBlock
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 08:50:37 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 36AAAQAAEAABSAAgAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DBF23066002564F24E50F81C
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 08:50:37 GMT
+      Host:
+      - bpa-abc-efg.obs.ap-southeast-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: HEAD
+    uri: https://bpa-abc-efg.obs.ap-southeast-4.myhuaweicloud.com/?apiversion
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 08:50:37 GMT
+      Server:
+      - OBS
+      x-obs-api:
+      - '3.0'
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DBF2314300072501ED0B7517
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <PublicAccessBlockConfiguration><BlockPublicAcls>True</BlockPublicAcls><IgnorePublicAcls>True</IgnorePublicAcls><BlockPublicPolicy>True</BlockPublicPolicy><RestrictPublicBuckets>True</RestrictPublicBuckets></PublicAccessBlockConfiguration>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '239'
+      Content-MD5:
+      - amkfKIYuyjPjjkpzzmHh0A==
+      Date:
+      - Fri, 28 Mar 2025 08:50:37 GMT
+      Host:
+      - bpa-abc-efg.obs.ap-southeast-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: PUT
+    uri: https://bpa-abc-efg.obs.ap-southeast-4.myhuaweicloud.com/?publicAccessBlock
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 28 Mar 2025 08:50:37 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 36AAAQAAEAABSAAgAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DBF232020024D03755EB4660
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Mar 2025 08:52:24 GMT
+      Host:
+      - bpa-abc-efg.obs.ap-southeast-4.myhuaweicloud.com
+      User-Agent:
+      - obs-sdk-python/3.24.6.1
+    method: GET
+    uri: https://bpa-abc-efg.obs.ap-southeast-4.myhuaweicloud.com/?publicAccessBlock
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><PublicAccessBlockConfiguration
+        xmlns="http://obs.myhwclouds.com/doc/2015-06-30/"><BlockPublicAcls>true</BlockPublicAcls><IgnorePublicAcls>true</IgnorePublicAcls><BlockPublicPolicy>true</BlockPublicPolicy><RestrictPublicBuckets>true</RestrictPublicBuckets></PublicAccessBlockConfiguration>
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '344'
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 28 Mar 2025 08:52:24 GMT
+      Server:
+      - OBS
+      x-obs-id-2:
+      - 36AAAQAAEAABAAAQAAEAABAAAQAAEAABAAAaI=AAAAAAAAAAAAAAAAAAAAAAAAAA
+      x-obs-request-id:
+      - 00000195DBF3D4780027B95E26256514
+    status:
+      code: 200
+      message: OK
+version: 1
