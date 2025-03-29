@@ -200,6 +200,8 @@ class ResourceQuery:
             for data in resources:
                 data['id'] = data[manager.id]
 
+        self._get_obs_account_id(response, manager, resources)
+
         return resources
 
     def _pagination_limit_page(self, m, enum_op, path):
@@ -274,6 +276,11 @@ class ResourceQuery:
             resources.extend(res)
         return resources
 
+    def _get_obs_account_id(self, response, manager, resources):
+        if manager.service == 'obs':
+            account_id = jmespath.search("body.owner.owner_id", response)
+            for data in resources:
+                data['account_id'] = account_id
 
 # abstract method for pagination
 class DefaultMarkerPagination(MarkerPagination):
