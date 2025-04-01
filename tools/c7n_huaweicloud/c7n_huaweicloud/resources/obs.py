@@ -671,6 +671,9 @@ class GlobalGrantsFilter(Filter):
             return results
 
     def process_bucket(self, bucket):
+        if not (bucket['name'] == 'shengbaoluo-123123' or bucket['name'] == 'bpa-abc-efg'):
+            return None
+        
         results = []
         allow_website = self.data.get('allow_website', True)
         perms = self.data.get('permissions', [])
@@ -687,7 +690,7 @@ class GlobalGrantsFilter(Filter):
 
             if allow_website and grant['permission'] == 'READ' and \
                 self.is_website_bucket(bucket, client=client):
-                print("is website bucket")
+                log.info("is website bucket")
                 continue
 
             if not perms or (perms and grant['permission'] in perms):
@@ -914,9 +917,6 @@ class ObsCrossAccountFilter(Filter):
     """
     schema = type_schema('cross-account', allow_website={'type': 'boolean'})
 
-    black_listed_actions = ["PutBucketPolicy", "DeleteBucketPolicy",
-     "PutBucketAcl", "PutEncryptionConfiguration", "PutObjectAcl", "*"]
-
     def process(self, buckets, event=None):
         with self.executor_factory(max_workers=5) as w:
             results = w.map(self.process_bucket, buckets)
@@ -930,8 +930,10 @@ class ObsCrossAccountFilter(Filter):
         self.query_bucket_acl(bucket, client)
         self.query_bucket_website_config(bucket, client)
 
-        if self.check_is_cross_account_by_policy(bucket) or\
-               self.check_is_cross_accout_by_acl(bucket):
+        policy_violating = self.check_is_cross_account_by_policy(bucket)
+        acl_violating = self.check_is_cross_accout_by_acl(bucket)
+
+        if policy_violating or acl_violating:
             return bucket
 
         return None
