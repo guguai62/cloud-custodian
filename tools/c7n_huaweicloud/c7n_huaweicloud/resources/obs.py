@@ -671,9 +671,6 @@ class GlobalGrantsFilter(Filter):
             return results
 
     def process_bucket(self, bucket):
-        if not (bucket['name'] == 'shengbaoluo-123123' or bucket['name'] == 'bpa-abc-efg'):
-            return None
-        
         results = []
         allow_website = self.data.get('allow_website', True)
         perms = self.data.get('permissions', [])
